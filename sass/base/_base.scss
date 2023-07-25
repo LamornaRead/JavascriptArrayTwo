@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: $font-weight--regular;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: $color-primary;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

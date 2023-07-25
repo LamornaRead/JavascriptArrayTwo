@@ -1,0 +1,204 @@
+.content {
+    @include center;
+    background-color: $white;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 15px 20px 10px rgba(0, 0, 0, 0.08);
+}
+
+.content-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    @include mq(large) {
+        padding: 30px;
+    }
+}
+.content-wrapper {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.content-item {
+    display: flex;
+    justify-content: center;
+}
+
+//between content /////////////////////////////////////////////////////////
+
+.below {
+    @include center;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    max-width: 800px;
+    gap: 10px;
+}
+
+.below-text {
+    font-size: 1rem;
+    text-transform: uppercase;
+    @include mq(small) {
+        font-size: 1.1rem;
+    }
+    @include mq(medium) {
+        font-size: 1.2rem;
+    }
+}
+
+.below-symbol {
+    font-size: 2rem;
+}
+// content ///////////////////////////////////////////////////////////////
+
+.header-text {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: $font-weight--light;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: rgba($color: $white, $alpha: .5) 1px 0 10px;
+    margin: 0;
+    padding: 15px 0;
+    @include mq(medium) {
+        font-size: 2.2rem;
+    }
+}
+
+
+.img {
+    min-width: 100px;
+    max-width: 250px;
+    width: 100%;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 2px solid $white;
+    @include mq(medium) {
+        border: 5px solid $white;
+    }
+}
+
+// email //////////////////////////////////////////////////////////
+
+.enter-email {
+    background-color: $color-primary;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid grey;
+}
+
+.email-item{
+   width: 100%;
+}
+
+.form-item-one { // enter email
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background-color: $color-secondary;
+    font-size: 1rem;
+    line-height: 1rem;
+    color: $white;
+    padding: 10px 0;
+}
+
+.form-item-two { // email input field
+    font-size: .9rem;
+    outline: none;
+    border: none;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    // border-radius: 5px;
+    &:focus {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+    }
+}
+// errors /////////////////////////////////////////////////////
+
+.error-email {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    color: red;
+    gap: 10px;
+    text-shadow: red 1px 0 30px;
+}
+
+.error-image {
+    color: red;
+    font-size: 0.9rem;
+    text-shadow: red 1px 0 30px;
+    @include mq(small) {
+        font-size: 1rem;
+    }
+    @include mq(medium) {
+        font-size: 1.1rem;
+    }
+}
+.error-container {
+    visibility: hidden;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+// buttons ////////////////////////////////////////////////////
+
+.btn {
+    color: $white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color-secondary;
+    &:hover {
+        text-shadow: $white 1px 0 10px;
+        box-shadow: 0 0 20px 10px rgba($color: $white, $alpha: .6);
+        background-color: lighten($color: $color-secondary, $amount: 10%);
+    }
+    @include mq(small) {
+        font-size: 1.2rem;
+        border: none;
+    }
+}
+
+.refresh-btn {
+    margin-bottom: 20px;
+    background-color: $light-purple;
+    color: $color-primary;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 10px rgba($color: $black, $alpha: .4);
+    &:hover {
+        color: $color-secondary;
+        background-color: darken($color: $light-purple, $amount: 10);
+    }
+}
+
+.send-btn {
+    margin: 10px 0 ;
+}
+
+.button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.remove-btn{
+   width: 60%;
+   visibility: hidden;
+   @include mq(medium) {
+    width: 40%;
+   }
+}

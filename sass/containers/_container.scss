@@ -1,0 +1,26 @@
+.container-main {
+    margin: 0;   
+    background-color: $light_purple;
+    height: 100%;
+}
+
+.container-inner {
+    @include center;
+    width: 90%;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    @include mq(medium) {
+        margin-top: 50px;
+    }
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 40px;
+    @include mq(x-large) {
+        flex-direction: row;
+    }
+}

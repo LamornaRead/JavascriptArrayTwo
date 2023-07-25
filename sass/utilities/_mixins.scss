@@ -1,0 +1,63 @@
+// Media quiries
+
+@mixin mq($break) {
+    @if $break == "x-small" {
+       @media (min-width: 1px) and (max-width: $break-sml) {
+          @content;
+       }
+    }
+    @else if $break == "small" {
+      @media (min-width: $break-sml) {
+         @content;
+      }
+   }
+    @else if $break == "medium" {
+       @media (min-width: $break-med) {
+          @content;
+       }
+    }
+    @else if $break == "large" {
+       @media (min-width: $break-lrg) {
+          @content;
+       }
+    }
+    @else if $break == "x-large" {
+       @media (min-width: $break-xlrg) {
+          @content;
+       }
+    }
+}
+
+// design
+
+@mixin center {
+    margin-right: auto;
+    margin-left: auto;
+ }
+ @mixin center-box{
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+@mixin bk-image($h) {
+    height: $h;
+    background-position: center;
+    background-size: cover;
+ }
+
+ // flex 
+
+@mixin flex-center{
+   display: flex;
+   justify-content: center;
+}
+
+@mixin flexbox{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   @include mq(large) {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+}

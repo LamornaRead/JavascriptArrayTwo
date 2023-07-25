@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamorna Reads Array Reflection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2af8b76caa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-main" >
+    <!-- container-main start -->
+        <div class="header" style="background-image: url(images/space-g2f7526c66_1280.jpg);"> 
+        </div>
+
+        <div class="custom-shape-divider-bottom-1686573733">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="container-inner">
+            <!-- container-inner start -->
+
+            <div class="container-flex">
+                <div class="content">
+                    <div style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+                        <h1 class="header-text">Send That Image</h1>
+                    </div>
+                    <div class="content-inner">
+                        <div class="content-wrapper" style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+                            <div id="img-container" class="content-item">
+                                <img id="image" src="" class="img" alt="random image">
+                            </div>
+
+                            <div class="content-item">
+                                <button id="new-image" class="refresh-btn">New image</button>
+                            </div>
+
+                            <form class="enter-email" onsubmit="return validateEmail()">
+                                
+                                <label class="email-item form-item-one" for="email">Enter Your email <i class="fa-solid fa-envelope"></i></label>
+                                <input class="email-item form-item-two" id="email" name="email" type="email">
+                                <span id="emailErr" class="email-item error-email">Invalid Email <i class="fa-solid fa-circle-xmark"></i></span>
+
+                                <div class="button-container">
+                                    <button id="btn" class="send-btn btn" type="submit" >Send To Email</button>
+                                </div>
+
+                                <div class="error-container">
+                                    <span id="imageErr" class="error-image">Image Already Added</span>
+                                </div>
+                                
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="below">
+                    <span class="below-text  x-large-hidden">Your Images Below</span>
+                    <span class="below-symbol  x-large-hidden"><i class="fa-solid fa-chevron-down"></i></span>
+                </div>
+
+                <div class="content">
+
+                    <div style="background-image: url(images/space-g2f7526c66_1280.jpg);">
+                        <h1 class="header-text">Your images</h1>
+                    </div>
+
+                    <div class="content-inner">
+                        <div class="email-img">
+                            <div class="assigned"></div>
+                            <div class="button-container">
+                                <button id="remove" class="remove-btn btn">Clear All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- container-inner end -->
+        </div>
+    <!-- container-main end -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

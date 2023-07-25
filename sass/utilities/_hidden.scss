@@ -1,0 +1,28 @@
+.xsmall-hidden {
+    @media (min-width: 1px) and (max-width: $break-sml - 1) {
+        display: none;
+    }
+}
+.small-hidden {
+    @media (min-width: 1px) and (max-width: $break-med - 1) {
+        display: none;
+    }
+}
+.medium-hidden {
+    @media (min-width: $break-med) and (max-width: $break-lrg - 1) {
+        display: none;
+    }
+}
+.large-hidden {
+    @media (min-width: $break-lrg) and (max-width: $break-xlrg - 1) {
+        display: none;
+    }
+}
+.x-large-hidden {
+    @media (min-width: $break-xlrg - 1) {
+        display: none;
+    }
+}
+.hidden {
+    display: none;
+}

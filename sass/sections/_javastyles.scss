@@ -1,0 +1,43 @@
+.user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user {
+   background-color: $color-primary;
+   border-radius: 10px;
+   overflow: hidden;   
+}
+
+
+
+.email-header{
+    font-size: .7rem;
+    font-weight: $font-weight--light;
+    letter-spacing: 3px;
+    color: $white;
+    text-align: center;
+    text-shadow: $white 1px 0 10px;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    margin: 0;
+    @include mq(medium) {
+        font-size: .9rem;
+    }
+}
+
+.user-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 15px;
+}
+
+.small-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid $light-purple;
+}
+
